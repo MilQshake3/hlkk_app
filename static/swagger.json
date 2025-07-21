@@ -1,0 +1,43 @@
+{
+         "openapi": "3.0.0",
+         "info": {
+             "title": "HI Lava Kuyi Koka-koka API",
+             "version": "1.0"
+         },
+         "paths": {
+             "/predict": {
+                 "post": {
+                     "summary": "Predict crash point",
+                     "requestBody": {
+                         "content": {
+                             "application/json": {
+                                 "schema": {
+                                     "type": "object",
+                                     "properties": {
+                                         "features": {
+                                             "type": "array",
+                                             "items": {"type": "number"}
+                                         }
+                                     }
+                                 }
+                             }
+                         }
+                     },
+                     "responses": {
+                         "200": {"description": "Prediction result"},
+                         "400": {"description": "Invalid data"},
+                         "500": {"description": "Server error"}
+                     }
+                 }
+             },
+             "/fetch_data": {
+                 "get": {
+                     "summary": "Fetch odds data from 365 Odds API",
+                     "responses": {
+                         "200": {"description": "Odds data"},
+                         "500": {"description": "Server error"}
+                     }
+                 }
+             }
+         }
+     }
