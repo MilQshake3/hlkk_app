@@ -4,7 +4,6 @@ attrs==23.2.0
 Babel==2.10.3
 beautifulsoup4==4.12.3
 blinker==1.7.0
-Brlapi==0.8.5
 certifi==2023.11.17
 chardet==5.2.0
 click==8.1.6
@@ -214,6 +213,4 @@ types-toposort==1.10
 types-tqdm==4.66
 types-translationstring==1.4
 types-tree-sitter==0.20.1
-types-tree-sitter-languages==1.8
-types-ttkthemes==3.2
-types-tz
+types-tree-s
